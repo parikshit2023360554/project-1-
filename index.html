@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="./hello.js">
+
+</script>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Finance Manager</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Accounts</a></li>
+            <li><a href="#">Transactions</a></li>
+            <li><a href="#">Budgets</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header>
+            <h1>Dashboard</h1>
+            <div class="user-info">
+                <div class="user-info1" id="user-info-display">
+                    <span>Welcome, User</span>
+                    <img src="./user.png" alt="User Profile">
+                </div>
+                <button class="sign-btn" onclick="hide()" >Sign in</button>
+            </div>
+        </header>
+        
+        <!-- Widgets Area -->
+        <div class="widgets">
+            <div class="widget balance">
+                <h3>Total Balance</h3>
+                <p>$25,300.00</p>
+            </div>
+            <div class="widget recent-transactions">
+                <h3>Recent Transactions</h3>
+                <ul>
+                    <li>Amazon - $150.00</li>
+                    <li>Starbucks - $25.00</li>
+                    <li>Groceries - $200.00</li>
+                    <li>Utility Bill - $100.00</li>
+                </ul>
+            </div>
+            <div class="widget analytics">
+                <h3>Analytics</h3>
+                <canvas id="analyticsChart"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
